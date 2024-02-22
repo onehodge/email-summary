@@ -1,0 +1,24 @@
+{
+  "timeZone": "America/Los_Angeles",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "gmail": {
+    "name": "Email Summary",
+    "logoUrl": "https://www.gstatic.com/images/icons/material/system/1x/label_googblue_24dp.png",
+    "contextualTriggers": [{
+      "unconditional": {},
+      "onTriggerFunction": "buildAddOn"
+    }],
+    "openLinkUrlPrefixes": [
+      "https://mail.google.com/"
+    ],
+    "primaryColor": "#4285F4",
+    "secondaryColor": "#4285F4"
+  }
+}
